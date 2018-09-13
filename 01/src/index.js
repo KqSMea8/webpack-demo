@@ -1,4 +1,5 @@
 // index
 import bar from './bar'
 
-console.log(bar())
+let hello = `<h1> ${ bar() } </h1>`
+document.write(hello)
