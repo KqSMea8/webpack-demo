@@ -1,5 +1,63 @@
 <html>
+  <head>
+    <style>
+      .vm-ips {
+        position: relative;
+        width: 450px;
+        height: auto;
+        border: 1px solid rebeccapurple;
+      }
+      .vm-ips-show {
+        left: 0;
+        top: 0;
+      }
+      .vm-ips-other {
+        clear: both;
+        display: block;
+        border: 1px solid rosybrown;
+      }
+      .vm-ips-show span {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .vm-ips-other span {
+        display: inline-block;
+        width: 130px;
+        margin-right: 5px;
+        border: 1px solid red;
+      }
+
+    </style>
+  </head>
   <body>
     <script type="text/javascript" src="./dist/bundle.js""></script>
+    <script>
+          function showOther() {
+            console.log('showOther')
+          }
+    </script>
+    <div class="vm-ips">
+      <div class="vm-ips-show">
+          <span>10.10.10.1</span>
+          <span class="vm-other-tip" onclick="showOther()">
+            <a>其他</a>
+            <a>12 ></a>
+        </span>
+      </div>
+      <div class="vm-ips-other">
+          <span>255.255.255.255</span>
+          <span>255.255.255.255</span>
+          <span>255.255.255.255</span>
+          <span>255.255.255.255</span>
+          <span>10.10.10.5</span>
+          <span>10.10.10.5</span>
+          <span>10.10.10.5</span>
+          <span>10.10.10.5</span>
+          <span>120.10.10.5</span>
+          <span>10.10.10.5</span>
+          <span>103.130.130.5</span>
+          <span>10.10.10.53</span>
+      </div>
+    </div>
   </body>
 </html>
