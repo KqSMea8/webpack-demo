@@ -1,5 +1,4 @@
 const path = require('path')
-var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -10,25 +9,22 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: [ 
-          {
+        use: [{
           loader: 'url-loader',
           options: {
             limit: 8192,
             name: 'static/[name].[hash:7].[ext]',
           }
-        } ]
+        }]
       },
     ]
   },
-  plugins: [
-  ],
+  plugins: [],
   mode: "development"
 }
