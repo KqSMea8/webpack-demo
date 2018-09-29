@@ -1,0 +1,1 @@
+document.querySelector('div').innerHTML = '<h1 style="color: hotpink; text-align: center"> Hello World !!! </h1>'
