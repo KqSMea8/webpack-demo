@@ -1,0 +1,8 @@
+{
+    "presents": [
+        "env"
+    ],
+    "plugins": [
+        "transform-runtime"
+    ]
+}
